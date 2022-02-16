@@ -1,15 +1,17 @@
 import random
-import turtle
+from turtle import *
 
 
-colors = ["CornflowerBlue", "DarkOrchid", "IndianRed", "DeepSkyBlue", "BlanchedAlmond", "PaleTurquoise", "honeydew"]
-fillcolors = ["yellow", "blue", "green", "IndianRed", "DeepSkyBlue", "honeydew"]
+colors = ["CornflowerBlue", "DarkOrchid", "IndianRed", "DeepSkyBlue", "blue", "PaleTurquoise", "green"]
+fill_colors = ["yellow", "blue", "green", "IndianRed", "DeepSkyBlue", "honeydew"]
 
 
-def pen_color(self):
-    return self.color(random.choice(colors))
+def pen_color():
+    step_color = random.choice(colors)
+    return step_color
 
 
-def fill_color(self):
-    return self.fillcolor(random.choice(colors))
+def fill_color():
+    shape_color = random.choice(fill_colors)
+    return shape_color
 
