@@ -5,8 +5,8 @@ from walk_random import random
 
 def init():
     timmy = Turtle()
-    choice = input("Hello. My name is Timmy the Turtle. I can do fun things! Would you like to see me draw a polygon, or "
-                   "should I just take a stroll? ('p' or 's') ")
+    choice = input("Hello. My name is Timmy the Turtle. I can do fun things! Would you like to see me draw a polygon, "
+                   "or should I just take a stroll? ('p' or 's') ")
     if choice == "p":
         polygon(timmy)
     elif choice == "s":
