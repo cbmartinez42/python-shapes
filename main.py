@@ -36,4 +36,6 @@ init()
 
 
 screen = Screen()
+sizescreen = screen.screensize()
+print("screensize: ", sizescreen)
 screen.exitonclick()
