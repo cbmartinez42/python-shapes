@@ -1,5 +1,5 @@
 import random as rand
-from colors import pen_color
+from colors import pen_color, random_color
 directions = [0, 90, 180, 270]
 
 
@@ -10,7 +10,8 @@ def random(self):
     timmy.speed(0)
     for _ in range(1000):
         timmy.forward(10)
-        turtle_color = pen_color()
+        # turtle_color = pen_color()
+        turtle_color = random_color()
         turtle_heading = rand.choice(directions)
         timmy.setheading(turtle_heading)
         timmy.color(turtle_color)

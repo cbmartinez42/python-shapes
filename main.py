@@ -1,15 +1,20 @@
-from turtle import *
+import turtle as t
 from walk_polygon import polygon
 from walk_random import random
+from walk_spirograph import spirograph
 
 
 def init():
-    timmy = Turtle()
-    choice = input("Hello. My name is Timmy the Turtle. I can do fun things! Would you like to see me draw a polygon, "
-                   "or should I just take a stroll? ('p' or 's') ")
+    timmy = t.Turtle()
+    t.colormode(255)
+    timmy.shape('turtle')
+    choice = input("Hello. My name is Timmy the Turtle. I can do fun things! Would you like to see me draw a (p)olygon, "
+                   "a (s)pirograph, or should I just take a (w)alk? ('p', 's' or 'w') ")
     if choice == "p":
         polygon(timmy)
     elif choice == "s":
+        spirograph(timmy)
+    elif choice == "w":
         random(timmy)
     else:
         print("Dude. I said 'p' or 's'. Try again.")
@@ -35,7 +40,7 @@ init()
 
 
 
-screen = Screen()
+screen = t.Screen()
 sizescreen = screen.screensize()
 print("screensize: ", sizescreen)
 screen.exitonclick()
